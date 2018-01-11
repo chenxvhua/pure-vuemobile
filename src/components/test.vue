@@ -1,8 +1,8 @@
 <template>
     <div class="hello mui-content">
         <h1>before{{ loading }}after</h1>
-         <a @click="$store.dispatch('loadingTrue',true)">设为true</a>
-         <a @click="$store.dispatch('loadingFalse',false)">设为false</a>
+         <a @click="$store.dispatch('loadingTrue','这里是true')">设为true</a>
+         <a @click="$store.dispatch('loadingFalse','这里是false')">设为false</a>
     </div>
 </template>
 <script>

@@ -13,10 +13,12 @@ export default new Vuex.Store({
         }
     },
     actions: {
-        loadingTrue (context) {
+        loadingTrue (context,params) {
+            console.log("params=",params);
             context.commit(types.commonState_loading,true)
         },
-        loadingFalse (context) {
+        loadingFalse (context,params) {
+            console.log("params=",params);
             context.commit(types.commonState_loading,false)
         }
     },
